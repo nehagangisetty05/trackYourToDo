@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tack Your To-Do</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="randomShape" id="box1"></div>
+        <div class="randomShape" id="box2"></div>
+        <div class="randomShape" id="box3"></div>
+        <div class="randomShape" id="box4"></div>
+    </div>
+
+    <div class="foreground">
+        <h1>Track Your TO-DO</h1>
+        <div class="container">
+            <div class="todo">
+                <div class="inputBox">
+                    <input type="text" id="inputtask" placeholder="Enter Task Name">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+                <ul id="listContainer">
+                    <!-- <li class="checkoff">task 1</li>
+                    <li>task 2</li>
+                    <li>task 3</li> -->
+                </ul>
+            </div>
+
+            <div class="stopwatch">
+                <div class="task">
+                    <input type="text" readonly class="displayTask">
+                </div>
+                <div class="watch">
+                    <h2>Stop Watch</h2>
+                    <h1 id="timer">00 : 00 : 00</h1>
+                    <div class="btns">
+                        <img src="./asset/icons/pause.png" alt="" onclick="pauseWatch()">
+                        <img src="./asset/icons/play.png" alt="" onclick="watchTime()">
+                        <img src="./asset/icons/reset.png" alt="" onclick="resetWatch()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
